@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Fitness Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<div class="container mt-5">
+    <h2 class="text-center">🏋 Fitness Tracker</h2>
+    <form action="/add" method="POST" class="card p-4 shadow">
+        <input type="number" name="steps" placeholder="Steps" class="form-control mb-3" required>
+        <input type="text" name="workout" placeholder="Workout Type" class="form-control mb-3" required>
+        <input type="number" name="minutes" placeholder="Workout Minutes" class="form-control mb-3" required>
+        <input type="number" name="calories" placeholder="Calories Burned" class="form-control mb-3" required>
+        <button type="submit" class="btn btn-primary">Add Record</button>
+    </form>
+</div>
+</body>
+</html>
