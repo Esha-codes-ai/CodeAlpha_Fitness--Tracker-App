@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile - FitTrack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <h2>FitTrack</h2>
+    <div>
+        <a href="home.html">Home</a>
+        <a href="workout.html">Workout</a>
+        <a href="#" onclick="logout()">Logout</a>
+    </div>
+</nav>
+
+<div class="form-container">
+    <h2>Your Profile</h2>
+    <p><strong>Name:</strong> <span id="profileName"></span></p>
+    <p><strong>Age:</strong> <span id="profileAge"></span></p>
+    <p><strong>Email:</strong> <span id="profileEmail"></span></p>
+</div>
+
+<script>
+document.getElementById("profileName").innerText = localStorage.getItem("username");
+document.getElementById("profileAge").innerText = localStorage.getItem("age");
+document.getElementById("profileEmail").innerText = localStorage.getItem("email");
+</script>
+
+</body>
+</html>

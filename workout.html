@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Workout - FitTrack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <button onclick="toggleDarkMode()">🌙</button>
+    <h2>FitTrack</h2>
+    <div>
+        <a href="home.html">Home</a>
+        <a href="workout.html">Workout</a>
+        <a href="instructions.html">Instructions</a>
+    </div>
+</nav>
+
+<div class="form-container">
+    <h2>Workout Tracker</h2>
+
+    <input type="text" id="workoutName" placeholder="Workout Name">
+    <input type="number" id="duration" placeholder="Duration (minutes)">
+    <button onclick="addWorkout()">Add Workout</button>
+
+    <ul id="workoutList"></ul>
+
+    <h3>Total Work Done: <span id="totalMinutes">0</span> mins</h3>
+<h3>Weekly Goal: 300 mins</h3>
+<div class="progress-bar">
+    <div id="progressFill"></div>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

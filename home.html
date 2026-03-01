@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home - FitTrack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <button onclick="toggleDarkMode()">🌙</button>
+    <h2>FitTrack</h2>
+    <div>
+        <a href="home.html">Home</a>
+        <a href="workout.html">Workout</a>
+        <a href="instructions.html">Instructions</a>
+<a href="#" onclick="logout()">Logout</a>    </div>
+</nav>
+
+<section class="hero colorful">
+    <h2 id="welcomeUser"></h2>
+
+<div class="bmi-box">
+    <h3>BMI Calculator</h3>
+    <input type="number" id="weight" placeholder="Weight (kg)">
+    <input type="number" id="height" placeholder="Height (cm)">
+    <button onclick="calculateBMI()">Calculate BMI</button>
+    <p id="bmiResult"></p>
+</div>
+    <h1>Welcome to Your Fitness Journey 💪</h1>
+    <p>Track your BMI & Workouts easily!</p>
+</section>
+
+
+</body>
+</html>

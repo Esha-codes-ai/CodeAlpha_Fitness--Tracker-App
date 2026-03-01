@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.gradient-bg {
+    background: linear-gradient(45deg, #ff6b6b, #6a11cb, #2575fc);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+button {
+    padding: 8px 12px;
+    margin: 5px;
+    background: #2575fc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+nav {
+    background: #6a11cb;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.hero {
+    padding: 50px;
+    text-align: center;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.image-gallery img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.instructions {
+    padding: 40px;
+}
+
+ul {
+    list-style: none;
+}
+.dark-mode {
+    background: #121212;
+    color: white;
+}
+
+.dark-mode nav {
+    background: black;
+}
+
+.dark-mode .bmi-box,
+.dark-mode .form-container {
+    background: #1e1e1e;
+    color: white;
+}
+.progress-bar {
+    width: 100%;
+    background: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 20px;
+    margin-top: 10px;
+}
+
+#progressFill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(45deg, #00f260, #0575e6);
+    transition: 0.5s;
+}
+body {
+    animation: gradientBG 10s ease infinite;
+    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb);
+    background-size: 400% 400%;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
