@@ -160,20 +160,4 @@ function updateProgress() {
     if (fill) fill.style.width = percent + "%";
 
 }
-function addWorkout() {
-    let exercise = document.getElementById("exercise").value;
-    let duration = document.getElementById("duration").value;
 
-    if (exercise === "" || duration === "") {
-        alert("Please enter exercise and duration!");
-        return;
-    }
-
-    let li = document.createElement("li");
-    li.textContent = exercise + " - " + duration + " minutes";
-
-    document.getElementById("workoutList").appendChild(li);
-
-    document.getElementById("exercise").value = "";
-    document.getElementById("duration").value = "";
-}
