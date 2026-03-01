@@ -134,3 +134,46 @@ body {
 .image-gallery img:hover {
     transform: scale(1.1);
 }
+.workout-tracker {
+    width: 400px;
+    margin: 50px auto;   /* This centers it */
+    text-align: center;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.workout-tracker input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.workout-tracker button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+.workout-tracker button:hover {
+    background-color: #218838;
+}
+
+#workoutList {
+    list-style: none;
+    padding: 0;
+}
+
+#workoutList li {
+    margin-top: 10px;
+    background: white;
+    padding: 8px;
+    border-radius: 6px;
+}
+
